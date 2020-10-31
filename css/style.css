@@ -1,3 +1,192 @@
+/* CSS RESET */
 @import "reset.css";
-@import url('https://fonts.googleapis.com/css2?family=Cormorant&family=Khula&family=Raleway&display=swap');
+/* DEFAULT STYLES */
 
+/* MEDIA QUERIES */
+@import url("https://fonts.googleapis.com/css2?family=Cormorant&family=Khula&family=Raleway&display=swap");
+
+/* Mobile first, we start from the smallest viewport width */
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Cormorant", serif;
+  font-size: 14px;
+  color: #2e282a;
+  text-decoration: none;
+  margin: 20px;
+}
+
+ul a {
+  text-decoration: none;
+  color: #2e282a;
+  margin: 5px;
+}
+
+#logo {
+  max-width: 70%;
+  height: auto;
+  align-self: left;
+}
+
+body {
+  background-attachment: yellow;
+}
+
+#header-section {
+  background: url(/images/plants_homepage_teaser.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 300px;
+  overflow: hidden;
+}
+
+#header-section p {
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+}
+
+#header-section h1 {
+  margin-top: 60px;
+  color: white;
+  text-align: center;
+}
+
+#bg {
+  background: url(/images/plant_banner.jpg);
+}
+
+h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 30px;
+}
+
+h2 {
+  font-family: "Raleway", sans-serif;
+  font-size: 36;
+  color: #2e282a;
+  text-align: center;
+}
+
+h3 {
+  font-family: "Raleway", sans-serif;
+  font-size: 20;
+  color: #2e282a;
+  text-align: center;
+}
+
+p {
+  font-family: "Khula", sans-serif;
+  font-size: 14px;
+  color: #2e282a;
+}
+
+.navigation {
+  font-family: "Cormorant", serif;
+  font-size: 14px;
+  color: #2e282a;
+  text-decoration: none;
+}
+
+::placeholder {
+  font-family: "Khula", sans-serif;
+  font-size: 10px;
+  color: grey;
+}
+
+input[type="text"] {
+  border: 1px solid #2a9d8f;
+  border-radius: 3px;
+  width: 50%;
+  margin: 5px;
+  text-decoration: none;
+  text-shadow: none;
+  font-family: "Khula", sans-serif;
+  font-size: 10px;
+}
+
+input:focus {
+  background-color: white;
+  outline: none;
+  caret-color: teal;
+}
+
+input[type="submit"] {
+  border: 1px outset #2a9d8f;
+  color: #2e282a;
+  background-color: #2a9d8f;
+  width: 50%;
+  margin: 5px;
+  border-radius: 3px;
+  font-family: "Cormorant", serif;
+}
+
+footer {
+  background-color: #dad6ff;
+  padding-top: 5px;
+  padding-bottom: 30px;
+}
+
+footer ul {
+  text-decoration: none;
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  padding: 0;
+  font-family: "Cormorant", serif;
+  font-size: 14px;
+  border-bottom: 40px;
+  padding-top: 25px;
+}
+
+footer p {
+  font-family: "Cormorant", serif;
+  text-align: center;
+}
+
+.tags {
+  font-family: "Khula", sans-serif;
+  font-size: 12px;
+  border: 1px solid #2a9d8f;
+  background-color: #2a9d8f;
+  padding: 5px;
+  margin: 2px;
+}
+
+#planttags {
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.images-slider {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.slider {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.btn {
+  background-color: #dad6ff;
+  color: #2e282a;
+  border: 1px solid #dad6ff;
+  font-family: "Cormorant", serif;
+  font-size: 18px;
+  padding: 8px 40px 8px 40px;
+  align-content: center;
+}
+
+.image {
+  width: 100%;
+}
+
+/* From 768px and up */

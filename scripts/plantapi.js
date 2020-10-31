@@ -1,15 +1,22 @@
 // Fetching the data from the plant API 
 // https://trefle.io/ --> for free
+const key = "e7uunFEDmiERGjDUgJPrn-Dg18cSfwV5Y8YX_h4tiZA"
+const proxy = "https://cors-anywhere.herokuapp.com/"
+const apiUrl = "https://trefle.io/api/v1/"
+async function getFirstData() {
+  try {
+    const response = await fetch(
+      `${proxy + apiUrl}plants/search?token=${key}&q=coconut`
+    );
+    console.log("response", response);
+    const dataAPI = await response.json();
+    /*  dataAPI.forEach(element => {
+            const newImg = document.createElement('img')
+        }); */
+    console.log("data", dataAPI);
+  } catch (err) {
+    console.log(err);
+  }
+}
+getFirstData();
 
-fetch('https://trefle.io/api/v1/plants?token=e7uunFEDmiERGjDUgJPrn-Dg18cSfwV5Y8YX_h4tiZA')
-.then((response) => {
-    console.log("response", response)
-    const pr = response.json();
-    return pr; 
-    })
-.then((data) => {
-    console.log("data",data)
-    })
-.catch((error) => {
-    console.log("ERROR", error);
-})
