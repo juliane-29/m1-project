@@ -27,16 +27,21 @@ class Signup {
     // e.target!! gets the element <input ...>, value is inside of it
     const email = e.target.value;
     //console.log(email);
+    // take the methods from the validator to evaluate the input from the user
+    validateInput.validateEmail(email);
+    validateInput.validateUniqueEmail(email);
   };
-  // hanlde the input of the password
+  // handle the input of the password
   handlePasswordInput = (e) => {
     const password = e.target.value;
     //console.log(password);
+    validateInput.validatePassword(password);
   };
   // handle the repeat password
   handleRepeatPasswordInput = (e) => {
     const repeatPassword = e.target.value;
     //console.log(repeatPassword);
+    validateInput.passwordNotMatching(password,repeatPassword)
   };
   // save the data once submitted (button clicked)
   saveData = (e) => {

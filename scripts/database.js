@@ -1,6 +1,7 @@
 "use strict"
 
 class Database {
+   // no constructor as only methods
   // a method to get users *array* from the localStorage 
   getAllUsers =() => {
     //key to look for in local storage - it's a string 
