@@ -30,18 +30,27 @@ class Signup {
     // take the methods from the validator to evaluate the input from the user
     validateInput.validateEmail(email);
     validateInput.validateUniqueEmail(email);
+    // show error messages 
+    const error = validateInput.showErrorMessages(); 
   };
   // handle the input of the password
   handlePasswordInput = (e) => {
     const password = e.target.value;
+    const passwordRepeatInput = this.passwordRepeatInput;
+    const repeatPassword = this.passwordRepeatInput.value; 
     //console.log(password);
+    // validate the password entered
     validateInput.validatePassword(password);
+    validateInput.validateRepeatPassword(password, repeatPassword);
   };
   // handle the repeat password
   handleRepeatPasswordInput = (e) => {
     const repeatPassword = e.target.value;
+    const passwordInput = this.passwordInput; 
+    const password = passwordInput.value; 
     //console.log(repeatPassword);
-    validateInput.passwordNotMatching(password,repeatPassword)
+    validateInput.validatePassword(password);
+    validateInput.validateRepeatPassword(password, repeatPassword);
   };
   // save the data once submitted (button clicked)
   saveData = (e) => {
