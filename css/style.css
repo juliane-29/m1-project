@@ -66,14 +66,15 @@ h1 {
 
 h2 {
   font-family: "Raleway", sans-serif;
-  font-size: 36;
+  font-size: 28px;
   color: #2e282a;
   text-align: center;
+
 }
 
 h3 {
   font-family: "Raleway", sans-serif;
-  font-size: 20;
+  font-size: 18px;
   color: #2e282a;
   text-align: center;
 }
@@ -185,8 +186,31 @@ footer p {
   align-content: center;
 }
 
+
 .image {
   width: 100%;
 }
 
+.form-container {
+  display:flex; 
+  justify-content: center;  
+}
+
+
 /* From 768px and up */
+
+/* From 768px and up */
+
+@media (min-width: 768px) {
+    body {
+    }
+
+    h1 {
+        font-size: 48px;
+    }
+
+    .slider{
+      display: flex;
+      flex-direction: row;
+    }
+}

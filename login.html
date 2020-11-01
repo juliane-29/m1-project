@@ -18,7 +18,7 @@
         <img src="images/plant_logo.svg" id="logo"></a>
      <ul>
         <!-- Links fpr the navigation -->
-        <a href="dashboard.html">Home</a>
+        <a href="index.html">Home</a>
         <a href="signup.html">Sign Up</a>
         <a href="login.html">Log In</a>
         <a href="faq.html">FAQ</a>
@@ -35,11 +35,15 @@
 <main>
 <h2> Log in</h2>
 <h3>🌿Enter the world of plants🌿</h3>
-<form>
+<div class="form-container">
+<form class="login-form" action="">
 <input type="text" id="fname" name="fname" placeholder="First Name"><br>
 <input type="text" id="email" name="email" placeholder="Email"><br>
+<input type="text" id="password" name="password" placeholder="Password"><br>
 <input type="submit" value="Log In">
 </form>
+<div class="messages"></div>
+</div>
 </main>
 </body>
 <!-- main footer that is used across all sites -->

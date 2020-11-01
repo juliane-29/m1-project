@@ -18,7 +18,7 @@
         <img src="images/plant_logo.svg" id="logo"></a>
      <ul>
         <!-- Links fpr the navigation -->
-        <a href="dashboard.html">Home</a>
+        <a href="index.html">Home</a>
         <a href="signup.html">Sign Up</a>
         <a href="login.html">Log In</a>
         <a href="faq.html">FAQ</a>
@@ -35,14 +35,22 @@
 <main>
     <h2> Sign up</h2>
     <h3>🌿Sign up for the world of plants🌿</h3>
-    <form>
+    <div class="form-container">
+  <!-- action links to url once sumbitted - send to the url-->
+    <form action = "">
+  <!-- sign up form-->
     <input type="text" id="fname" name="fname" placeholder="First Name"><br>
+    <p id ="values"></p>
     <input type="text" id="lname" name="lname" placeholder="Last Name"><br>
     <input type="text" id="email" name="email" placeholder="Email"><br>
-    <input type="text" id="pword" name="pword" placeholder="Password"><br>
-    <input type="text" id="pword" name="pword" placeholder="Repeat Password"><br>
-    <input type="submit" value="Sign up">
+  <!-- type pw - same as text but hides the text that is typed -->
+    <input type="password" id="pword" name="pword" placeholder="Password"><br>
+    <input type="password" id="repeat-pword" name="pword" placeholder="Repeat Password"><br>
+  <!-- submitting the form navigates to the form's action attribute, using either get or post request-->
+    <button type="submit" class="button-signup" id="sign-up-button">Sign up</button>
     </form>
+    <div class="error-messages"></div>
+  </div>
 </main>
 </body>
 <footer>
@@ -54,3 +62,10 @@
     <li><a href="faq.html">FAQ</a></li>
 </ul>
 </footer>
+<script src="./scripts/signup.js"></script>
+<script src="./scripts/login.js"></script>
+<script src="./scripts/plantapi.js"></script>
+<script src="./scripts/login.js"></script>
+
+</body>
+</html>
