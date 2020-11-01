@@ -12,7 +12,7 @@ class Signup {
     this.passwordInput = document.querySelector("#pword");
     this.passwordRepeatInput = document.querySelector("#repeat-pword"); 
     // access *button* 
-    this.buttonInput = document.querySelector("#button-signup");
+    this.buttonInput = document.querySelector("#sign-up-button");
     // to display *error messages* we have to access the div element
     this.errorMessages = document.querySelector(".error-messages"); 
     }
@@ -21,37 +21,39 @@ class Signup {
     // handle the input of the email: read the input and evaluate it 
 
     handleEmailInput = (e) => {
-        console.log(e.target); // 
-        const emailInput = e.target; 
-        const email = emailInput.value; 
+        // important - event object is the first parameter coming from the addeventlistener provided by the browser, it has information about the event
+        //console.log(e); 
+        // e.target - <input ...>, value is inside of it 
+        const email = e.target.value;
+        console.log(email);
     }
     // hanlde the input of the password 
-    handlePasswordInput = () => {
-
+    handlePasswordInput = (e) => {
+        const password = e.target.value; 
+        console.log(password);
     }
 
     // handle the repeat password 
-    handleRepeatPasswordInput = () => {
-
+    handleRepeatPasswordInput = (e) => {
+        const repeatPassword = e.target.value;
+        console.log(repeatPassword);
     }
 
     // save the data once submitted (button clicked)
     saveData = () => {
 
     }
-
     // add Event Listeners 
     // input event fires when the value of an <input>, <select> or <textarea> has been changed
     addListeners = () => {
-        this.emailInput.addEventListeners("input", this.handleEmailInput);
-        // user enters something, handle EmailInput is called 
+        this.emailInput.addEventListener("input", this.handleEmailInput);
+        // whenever user enters/inputs something, handle EmailInput is called. When it is run the browser provides the event object!!
         // Important --> the first parameter for the function is the event object, type depends on the specified event, click belongs to the MouseEvent object 
-        this.passwordInput.addEventListeners("input", this.handlePasswordInput);
-        this.passwordRepeatInput.addEventListeners("input", this.handleRepeatPasswordInput); 
+        this.passwordInput.addEventListener("input", this.handlePasswordInput);
+        this.passwordRepeatInput.addEventListener("input", this.handleRepeatPasswordInput); 
         // once clicked as submitted, save data is called
-        this.buttonInput.addEventListeners("click", this.saveData); 
+        this.buttonInput.addEventListener("click", this.saveData); 
     }
-
 }
 
 // creating *one* instance - class is just to organize the code, singletone pattern
