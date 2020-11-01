@@ -67,7 +67,7 @@ class Validator {
   };
 
   validateRepeatPassword = (password, repeatPassword) => {
-    if (passowrd === repeatPassword) {
+    if (password === repeatPassword) {
       delete this.errors.passwordNotMatching;
     } else {
       this.errors.passwordNotMatching = this.passwordNotMatching;
@@ -82,4 +82,5 @@ class Validator {
 
 // going to use the instance for the sign up page to check the inputs and show error
 // messages if necessary
-const validateInput = new Validator();
+const validator = new Validator();
+console.log("validator",validator);

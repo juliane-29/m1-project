@@ -28,30 +28,47 @@ class Signup {
     const email = e.target.value;
     //console.log(email);
     // take the methods from the validator to evaluate the input from the user
-    validateInput.validateEmail(email);
-    validateInput.validateUniqueEmail(email);
-    // show error messages 
-    const error = validateInput.showErrorMessages(); 
+    validator.validateEmail(email);
+    validator.validateUniqueEmail(email);
+    // show error messages
+    this.setErrorMessages();
   };
   // handle the input of the password
   handlePasswordInput = (e) => {
     const password = e.target.value;
     const passwordRepeatInput = this.passwordRepeatInput;
-    const repeatPassword = this.passwordRepeatInput.value; 
+    const repeatPassword = passwordRepeatInput.value;
     //console.log(password);
     // validate the password entered
-    validateInput.validatePassword(password);
-    validateInput.validateRepeatPassword(password, repeatPassword);
+    validator.validatePassword(password);
+    validator.validateRepeatPassword(password, repeatPassword);
+    this.setErrorMessages();
   };
   // handle the repeat password
   handleRepeatPasswordInput = (e) => {
     const repeatPassword = e.target.value;
-    const passwordInput = this.passwordInput; 
-    const password = passwordInput.value; 
+    const passwordInput = this.passwordInput;
+    const password = passwordInput.value;
     //console.log(repeatPassword);
-    validateInput.validatePassword(password);
-    validateInput.validateRepeatPassword(password, repeatPassword);
+    validator.validatePassword(password);
+    validator.validateRepeatPassword(password, repeatPassword);
+    this.setErrorMessages();
   };
+
+  setErrorMessages = () => {
+    // clear messages so they don't build up
+    this.errorMessages.innerHTML = "";
+    const errorsObj = validator.showErrorMessages();
+    console.log("errorsObj", errorsObj);
+    // returning an array with only the values; a special object in JS
+    const errorStringsArr = Object.values(errorsObj);
+    errorStringsArr.forEach((str) => {
+      const p = document.createElement("p");
+      p.textContent = str;
+      this.errorMessages.appendChild(p);
+    });
+  };
+
   // save the data once submitted (button clicked)
   saveData = (e) => {
     // prevent the default behavior of the submit button
