@@ -6,7 +6,7 @@
 
 /* Mobile first, we start from the smallest viewport width */
 
-.container {
+.container-2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -14,7 +14,6 @@
   font-size: 14px;
   color: #2e282a;
   text-decoration: none;
-  margin: 20px;
 }
 
 ul a {
@@ -83,9 +82,9 @@ p {
   color: #2e282a;
 }
 
-.navigation {
+.nav-link {
   font-family: "Cormorant", serif;
-  font-size: 14px;
+  font-size: 16px;
   color: #2e282a;
   text-decoration: none;
 }
@@ -136,8 +135,6 @@ input[type="submit"] {
 
 footer {
   background-color: #dad6ff;
-  padding-top: 5px;
-  padding-bottom: 30px;
 }
 
 .container-footer-links {
@@ -225,20 +222,21 @@ footer p {
   height: 200px 
 }
 
+#faq-header{
+  animation: bounceInRight;
+  animation-duration: 2s;
 
-
-/* From 768px and up */
-
-/* From 768px and up */
-
-@media (min-width: 768px) {
-  
-  h1 {
-    font-size: 48px;
-  }
-
-  .slider {
-    display: flex;
-    flex-direction: row;
-  }
 }
+
+
+
+  
+
+
+
+
+
+/* From 768px and up */
+
+/* From 768px and up */
+

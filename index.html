@@ -13,7 +13,7 @@
 <link rel="stylesheet" href="css/style.css" />
   </head>
 <body>
-  <header>
+<header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <a class="navbar-brand" href="index.html"><img height="40px" src="images/plant_logo.svg"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,11 +47,11 @@
 <br>
 <main>
 <!-- Teaser images-->
-<div class="slider container">
+<div class="slider container-2">
   <div class = "row">
-  <div class="images-slider col-xs-12 col-md-4 col-lg-4"> <img src="/images/Screenshot 2020-10-31 at 20.09.47.png" class="image"><button class="btn" onclick="index.html">Disover now</button></div>
-  <div class="images-slider col-xs-12 col-md-4 col-lg-4"><img src="/images/Screenshot 2020-10-31 at 20.09.47.png" class="image"><button class="btn" onclick="index.html">Disover now</button></div>
-  <div class="images-slider col-xs-12 col-md-4 col-lg-4"><img src="/images/Screenshot 2020-10-31 at 20.09.47.png" class="image"><button class="btn" onclick="index.html">Disover now</button></div>
+  <div class="images-slider col-xs-12 col-md-4 col-lg-4"> <img src="/images/plants_example.png" class="image"><button class="btn" onclick="index.html">Disover now</button></div>
+  <div class="images-slider col-xs-12 col-md-4 col-lg-4"><img src="/images/plants_example.png" class="image"><button class="btn" onclick="index.html">Disover now</button></div>
+  <div class="images-slider col-xs-12 col-md-4 col-lg-4"><img src="/images/plants_example.png" class="image"><button class="btn" onclick="index.html">Disover now</button></div>
 </div>     
 </div> 
 <br>
@@ -77,6 +77,7 @@
 <br>
 <br>-->
 <!--Links to discover different plants -->
+<br>
 <h2>Plants to discover</h2>
 <div id="planttags">
 <button class="tags" onclick="index.html">edable</button>
@@ -87,14 +88,19 @@
 <div class="plants-list container"></div>
 </main>
 <!-- main footer that is used across all sites -->
+
 <footer>
+<div class="container">
+<div class="footer-part">
   <p>Made with 💛 in Barcelona</p>
-  <ul id="footer-links">
-      <li><a href="dashboard.html">Home</a></li>
-      <li><a href="signup.html">Sign Up</a></li>
-      <li><a href="login.html">Log In</a></li>
-      <li><a href="faq.html">FAQ</a></li>
-  </ul>
+</div>
+<div class ="row">
+  <div class="col-xs-12 col-sm-12 col-md-3"><p>Home</p></div>
+  <div class="col-xs-12 col-sm-12 col-md-3"><p>Sign up</p></div>
+  <div class="col-xs-12 col-sm-12 col-md-3"><p>Log In</p></div>
+  <div class="col-xs-12 col-sm-12 col-md-3"><p>FAQ</p></div>
+</div>
+</div>
 </footer>
 <!-- scripts loaded at the end of the body-->
 <script src="./scripts/login.js"></script>
