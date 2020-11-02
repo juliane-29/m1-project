@@ -18,29 +18,42 @@ async function getFirstData() {
 
     const dataAPI = await response.json();
     const plantsData = dataAPI.data;
-    plantsData.forEach((plant) => {
+    /*plantsData.forEach((plant) => {
       const createDiv = document.createElement("div");
       createDiv.innerHTML = `<img src="${plant.image_url}"/>`;
       plantsList.appendChild(createDiv);
-    });
+    });*/
 
-    plantsData.forEach((plant) => {
+    /*plantsData.forEach((plant) => {
       const createDiv = document.createElement("div");
       createDiv.innerHTML = `<h2>${plant.common_name} <h2/>`;
       plantsList.appendChild(createDiv);
-    });
+    });*/
 
-    plantsData.forEach((plant) => {
+    /*plantsData.forEach((plant) => {
       const createDiv = document.createElement("div");
       createDiv.innerHTML = `<h2>${plant.family_common_name}<h2/>`;
       plantsList.appendChild(createDiv);
+    });*/
+
+    plantsData.forEach((plant) => {
+      // create a variable create div and create an element 
+      const createDiv = document.createElement("div");
+      createDiv.className = "plant-container";
+    
+      createDiv.innerHTML = `<img class="plant-image" src="${plant.image_url}"/><h3>${plant.common_name}<h3/><p>${plant.family_common_name}<p/>`;
+      plantsList.appendChild(createDiv);
     });
 
     plantsData.forEach((plant) => {
       const createDiv = document.createElement("div");
-      createDiv.innerHTML = `<img src="${plant.image_url}"/><h2>${plant.common_name} <h2/><h2>${plant.family_common_name}<h2/>`;
+      createDiv.innerHTML = `<img height="200" src="${plant.image_url}"/><h3>${plant.common_name}<h3/><p>${plant.family_common_name}<p/>`;
       plantsList.appendChild(createDiv);
     });
+
+
+
+
 
     /*  dataAPI.forEach(element => {
             const newImg = document.createElement('img')

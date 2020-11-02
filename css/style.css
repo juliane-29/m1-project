@@ -215,8 +215,16 @@ footer p {
   width: 100%;
 }
 
-.form-container {
+.plants-list {
+  display: flex; 
+  flex-direction: column;
 }
+
+.plants-list img { 
+  height: 200px 
+}
+
+
 
 /* From 768px and up */
 
