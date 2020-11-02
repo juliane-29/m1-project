@@ -53,7 +53,6 @@ class Login {
       location.assign("selectedplants.html")
     }, 2000 )
 }
-
 }
 // create an instance
 const login = new Login();

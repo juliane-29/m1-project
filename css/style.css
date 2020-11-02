@@ -1,5 +1,4 @@
 /* CSS RESET */
-@import "reset.css";
 /* DEFAULT STYLES */
 
 /* MEDIA QUERIES */
@@ -69,7 +68,6 @@ h2 {
   font-size: 28px;
   color: #2e282a;
   text-align: center;
-
 }
 
 h3 {
@@ -186,31 +184,29 @@ footer p {
   align-content: center;
 }
 
-
 .image {
   width: 100%;
 }
 
 .form-container {
-  display:flex; 
-  justify-content: center;  
+  display: flex;
+  justify-content: center;
 }
-
 
 /* From 768px and up */
 
 /* From 768px and up */
 
 @media (min-width: 768px) {
-    body {
-    }
+  body {
+  }
 
-    h1 {
-        font-size: 48px;
-    }
+  h1 {
+    font-size: 48px;
+  }
 
-    .slider{
-      display: flex;
-      flex-direction: row;
-    }
+  .slider {
+    display: flex;
+    flex-direction: row;
+  }
 }
