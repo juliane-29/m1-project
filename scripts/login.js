@@ -1,4 +1,3 @@
-"use strict";
 
 class Login {
   constructor() {
@@ -56,14 +55,14 @@ class Login {
 }
 // create an instance
 const login = new Login();
-// it does not show the properties though? typo!!
+// it does n
+//ot show the properties though? typo!!
 // checking properties and methods of the class
 
-console.log(login);
-
+//console.log(login);
 // only one eventListener as we do not check the input
 // the page + ressources must be loaded
-window.addEventListener("load", function () {
+
   login.loginButton.addEventListener("click", login.handleSubmit);
-});
+
 // handleSubmit function --> remember: first paramenter is the event

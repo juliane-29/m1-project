@@ -1,18 +1,47 @@
 // accessing the div on the selected plants page
-const plantsList = document.querySelector(".plants-list");
 
 // Fetching data from an API about plants -> trefle.io
-const key = "e7uunFEDmiERGjDUgJPrn-Dg18cSfwV5Y8YX_h4tiZA"
-const proxy = "https://cors-anywhere.herokuapp.com/"
-const apiUrl = "https://trefle.io/api/v1/"
-
+const key = "e7uunFEDmiERGjDUgJPrn-Dg18cSfwV5Y8YX_h4tiZA";
+//const proxy = "https://cors-anywhere.herokuapp.com/";
+// api url
+const apiUrl = "https://trefle.io/api/v1/";
+// definining async function
 async function getFirstData() {
+  const plantsList = document.querySelector(".plants-list");
   try {
+    // storing the respons fetching the data
     const response = await fetch(
-      `${proxy + apiUrl}plants/search?token=${key}&q=coconut`
+      `${apiUrl}plants/search?token=${key}&q=coconut`
     );
     console.log("response", response);
+    // storing data in form of a json file
+
     const dataAPI = await response.json();
+    const plantsData = dataAPI.data;
+    plantsData.forEach((plant) => {
+      const createDiv = document.createElement("div");
+      createDiv.innerHTML = `<img src="${plant.image_url}"/>`;
+      plantsList.appendChild(createDiv);
+    });
+
+    plantsData.forEach((plant) => {
+      const createDiv = document.createElement("div");
+      createDiv.innerHTML = `<h2>${plant.common_name} <h2/>`;
+      plantsList.appendChild(createDiv);
+    });
+
+    plantsData.forEach((plant) => {
+      const createDiv = document.createElement("div");
+      createDiv.innerHTML = `<h2>${plant.family_common_name}<h2/>`;
+      plantsList.appendChild(createDiv);
+    });
+
+    plantsData.forEach((plant) => {
+      const createDiv = document.createElement("div");
+      createDiv.innerHTML = `<img src="${plant.image_url}"/><h2>${plant.common_name} <h2/><h2>${plant.family_common_name}<h2/>`;
+      plantsList.appendChild(createDiv);
+    });
+
     /*  dataAPI.forEach(element => {
             const newImg = document.createElement('img')
         }); */
@@ -21,4 +50,5 @@ async function getFirstData() {
     console.log(err);
   }
 }
+// calling that asynch function
 getFirstData();

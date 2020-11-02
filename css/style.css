@@ -107,6 +107,17 @@ input[type="text"] {
   font-size: 10px;
 }
 
+input[type="password"] {
+  border: 1px solid #2a9d8f;
+  border-radius: 3px;
+  width: 50%;
+  margin: 5px;
+  text-decoration: none;
+  text-shadow: none;
+  font-family: "Khula", sans-serif;
+  font-size: 10px;
+}
+
 input:focus {
   background-color: white;
   outline: none;
@@ -184,13 +195,27 @@ footer p {
   align-content: center;
 }
 
+#log-in-button {
+  background-color: #2a9d8f;
+  border: 1px solid #2a9d8f;
+  font-family: "Cormorant", serif;
+  font-size: 16px;
+  padding: 4px 20px 4px 20px;
+}
+
+.button-signup {
+  background-color: #2a9d8f;
+  border: 1px solid #2a9d8f;
+  font-family: "Cormorant", serif;
+  font-size: 16px;
+  padding: 4px 20px 4px 20px;
+}
+
 .image {
   width: 100%;
 }
 
 .form-container {
-  display: flex;
-  justify-content: center;
 }
 
 /* From 768px and up */
@@ -198,9 +223,7 @@ footer p {
 /* From 768px and up */
 
 @media (min-width: 768px) {
-  body {
-  }
-
+  
   h1 {
     font-size: 48px;
   }
