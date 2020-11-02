@@ -140,7 +140,7 @@ footer {
   padding-bottom: 30px;
 }
 
-footer ul {
+.container-footer-links {
   text-decoration: none;
   display: flex;
   list-style-type: none;
@@ -150,6 +150,7 @@ footer ul {
   font-size: 14px;
   border-bottom: 40px;
   padding-top: 25px;
+  color: 
 }
 
 footer p {
