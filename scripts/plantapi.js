@@ -8,6 +8,7 @@ const apiUrl = "https://trefle.io/api/v1/";
 // definining async function
 async function getFirstData() {
   const plantsList = document.querySelector(".plants-list");
+
   try {
     // storing the respons fetching the data
     const response = await fetch(
@@ -37,10 +38,10 @@ async function getFirstData() {
     });*/
 
     plantsData.forEach((plant) => {
-      // create a variable create div and create an element 
+      // create a variable create div and create an element
       const createDiv = document.createElement("div");
       createDiv.className = "plant-container";
-    
+
       createDiv.innerHTML = `<img class="plant-image" src="${plant.image_url}"/><h3>${plant.common_name}<h3/><p>${plant.family_common_name}<p/>`;
       plantsList.appendChild(createDiv);
     });
@@ -50,10 +51,6 @@ async function getFirstData() {
       createDiv.innerHTML = `<img height="200" src="${plant.image_url}"/><h3>${plant.common_name}<h3/><p>${plant.family_common_name}<p/>`;
       plantsList.appendChild(createDiv);
     });
-
-
-
-
 
     /*  dataAPI.forEach(element => {
             const newImg = document.createElement('img')
