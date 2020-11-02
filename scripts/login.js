@@ -41,10 +41,19 @@ class Login {
     } else {
       // user has been found in db
       p.textContent = `Hello ${user.firstName}`;
+      // redirect/open to the dashboard page
+      this.redirect();
     }
 
     this.errorMessages.appendChild(p);
-  };
+  }
+
+  redirect = () => {
+      setTimeout (function(){
+      location.assign("selectedplants.html")
+    }, 2000 )
+}
+
 }
 // create an instance
 const login = new Login();
