@@ -1,0 +1,120 @@
+.animation {
+    text-decoration: none;
+    position:relative;
+     animation:vibrate 1s linear infinite both;
+  }
+  
+  @keyframes vibrate {
+    0% {
+      transform: translate(0,0);
+    }
+    20% {
+      transform: translate(-2px, 2px);
+    }
+    40% {
+      transform: translate(-2px, -2px);
+    }
+    60% {
+      transform: translate(2px, 2px);
+    }
+    80% {
+      transform: translate(2px, -2px);
+    }
+    100% {
+      transform: translate(0);
+    }
+  }
+  
+  .tracking-in-expand {
+      -webkit-animation: tracking-in-expand 0.7s ease-in both;
+              animation: tracking-in-expand 0.7s ease-in both;
+  }
+  
+  @keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .tracking-in-expand {
+	-webkit-animation: tracking-in-expand 0.7s cubic-bezier(1.000, 0.000, 0.000, 1.000) both;
+	        animation: tracking-in-expand 0.7s cubic-bezier(1.000, 0.000, 0.000, 1.000) both;
+}
+
+
+@keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .vibrate-1 {
+  background-color: #2a9d8f;
+  border: 1px solid #2a9d8f;
+  font-family: "Cormorant", serif;
+  font-size: 16px;
+  padding: 4px 20px 4px 20px;
+  margin: 10px;
+	-webkit-animation: vibrate-1 0.3s linear infinite both;
+	        animation: vibrate-1 0.3s linear infinite both;
+}
+
+.noButton{
+  background-color: #2a9d8f;
+  border: 1px solid #2a9d8f;
+  font-family: "Cormorant", serif;
+  font-size: 16px;
+  padding: 4px 20px 4px 20px;
+  margin: 10px;
+}
+
+
+.questionaire {
+    align-content: center;
+}
+@keyframes vibrate-1 {
+    0% {
+      -webkit-transform: translate(0);
+              transform: translate(0);
+    }
+    20% {
+      -webkit-transform: translate(-2px, 2px);
+              transform: translate(-2px, 2px);
+    }
+    40% {
+      -webkit-transform: translate(-2px, -2px);
+              transform: translate(-2px, -2px);
+    }
+    60% {
+      -webkit-transform: translate(2px, 2px);
+              transform: translate(2px, 2px);
+    }
+    80% {
+      -webkit-transform: translate(2px, -2px);
+              transform: translate(2px, -2px);
+    }
+    100% {
+      -webkit-transform: translate(0);
+              transform: translate(0);
+    }
+  }
+  
+  .question{
+      background-color: green ;
+      padding: 20px;
+      margin: 20px
+  }

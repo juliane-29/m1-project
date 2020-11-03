@@ -225,12 +225,13 @@ footer p {
 #faq-header{
   animation: bounceInRight;
   animation-duration: 2s;
+  background-color: #2a9d8f;
+  color: white
 
 }
 
 
 
-  
 
 
 
