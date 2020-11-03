@@ -76,6 +76,12 @@ h3 {
   text-align: center;
 }
 
+h4 {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  color: #2e282a;
+}
+
 p {
   font-family: "Khula", sans-serif;
   font-size: 14px;

@@ -21,36 +21,19 @@ async function getPlantsEdible() {
 
     const dataAPI = await response.json();
     const plantsData = dataAPI.data;
-    /*plantsData.forEach((plant) => {
-      const createDiv = document.createElement("div");
-      createDiv.innerHTML = `<img src="${plant.image_url}"/>`;
-      plantsList.appendChild(createDiv);
-    });*/
-
-    /*plantsData.forEach((plant) => {
-      const createDiv = document.createElement("div");
-      createDiv.innerHTML = `<h2>${plant.common_name} <h2/>`;
-      plantsList.appendChild(createDiv);
-    });*/
-
-    /*plantsData.forEach((plant) => {
-      const createDiv = document.createElement("div");
-      createDiv.innerHTML = `<h2>${plant.family_common_name}<h2/>`;
-      plantsList.appendChild(createDiv);
-    });*/
 
     plantsData.forEach((plant) => {
       // create a variable create div and create an element
       const createDiv = document.createElement("div");
       createDiv.className = "plant-container";
 
-      createDiv.innerHTML = `<img class="plant-image" src="${plant.image_url}"/><h3>${plant.common_name}<h3/><p>${plant.family_common_name}<p/>`;
+      createDiv.innerHTML = `<img class="plant-image" src="${plant.image_url}"/><h4>${plant.common_name}<h4/><p>${plant.family_common_name}<p/>`;
       plantsList.appendChild(createDiv);
     });
 
     plantsData.forEach((plant) => {
       const createDiv = document.createElement("div");
-      createDiv.innerHTML = `<img height="200" src="${plant.image_url}"/><h3>${plant.common_name}<h3/><p>${plant.family_common_name}<p/>`;
+      createDiv.innerHTML = `<img height="200" src="${plant.image_url}"/><h4>${plant.common_name}<h4/><p>${plant.family_common_name}<p/>`;
       plantsList.appendChild(createDiv);
     });
 
@@ -104,13 +87,13 @@ async function getPlantsVegetable() {
         const createDiv = document.createElement("div");
         createDiv.className = "plant-container";
   
-        createDiv.innerHTML = `<img class="plant-image" src="${plant.image_url}"/><h3>${plant.common_name}<h3/><p>${plant.family_common_name}<p/>`;
+        createDiv.innerHTML = `<img class="plant-image" src="${plant.image_url}"/><h4>${plant.common_name}<h4/><p>${plant.family_common_name}<p/>`;
         plantsList.appendChild(createDiv);
       });
   
       plantsData.forEach((plant) => {
         const createDiv = document.createElement("div");
-        createDiv.innerHTML = `<img height="200" src="${plant.image_url}"/><h3>${plant.common_name}<h3/><p>${plant.family_common_name}<p/>`;
+        createDiv.innerHTML = `<img height="200" src="${plant.image_url}"/><h4>${plant.common_name}<h4/><p>${plant.family_common_name}<p/>`;
         plantsList.appendChild(createDiv);
       });
   
@@ -163,13 +146,13 @@ async function getPlantsVegetable() {
         const createDiv = document.createElement("div");
         createDiv.className = "plant-container";
   
-        createDiv.innerHTML = `<img class="plant-image" src="${plant.image_url}"/><h3>${plant.common_name}<h3/><p>${plant.family_common_name}<p/>`;
+        createDiv.innerHTML = `<img class="plant-image" src="${plant.image_url}"/><h4>${plant.common_name}<h4/><p>${plant.family_common_name}<p/>`;
         plantsList.appendChild(createDiv);
       });
   
       plantsData.forEach((plant) => {
         const createDiv = document.createElement("div");
-        createDiv.innerHTML = `<img height="200" src="${plant.image_url}"/><h3>${plant.common_name}<h3/><p>${plant.family_common_name}<p/>`;
+        createDiv.innerHTML = `<img height="200" src="${plant.image_url}"/><h4>${plant.common_name}<h4/><p>${plant.family_common_name}<p/>`;
         plantsList.appendChild(createDiv);
       });
   
@@ -222,13 +205,13 @@ async function getPlantsVegetable() {
         const createDiv = document.createElement("div");
         createDiv.className = "plant-container";
   
-        createDiv.innerHTML = `<img class="plant-image" src="${plant.image_url}"/><h3>${plant.common_name}<h3/><p>${plant.family_common_name}<p/>`;
+        createDiv.innerHTML = `<img class="plant-image" src="${plant.image_url}"/><h4>${plant.common_name}<h4/><p>${plant.family_common_name}<p/>`;
         plantsList.appendChild(createDiv);
       });
   
       plantsData.forEach((plant) => {
         const createDiv = document.createElement("div");
-        createDiv.innerHTML = `<img height="200" src="${plant.image_url}"/><h3>${plant.common_name}<h3/><p>${plant.family_common_name}<p/>`;
+        createDiv.innerHTML = `<img height="200" src="${plant.image_url}"/><h4>${plant.common_name}<h4/><p>${plant.family_common_name}<p/>`;
         plantsList.appendChild(createDiv);
       });
   
