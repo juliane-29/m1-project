@@ -10,11 +10,16 @@ moreInfo = (e) => {
   anotherMessage.appendChild(message);
 };
 
+
 noInfo = (e) => {
+e.preventDefault();
   const message = document.createElement("p");
   message.innerHTML = "<h2>Ok, fine</h2>";
   anotherMessage.appendChild(message);
+
 };
+
+
 
 buttonYes.addEventListener("click", moreInfo);
 buttonNo.addEventListener("click", noInfo);

@@ -155,11 +155,20 @@ footer p {
   text-align: center;
 }
 
-.tags {
+.tags-not-clicked {
   font-family: "Khula", sans-serif;
   font-size: 12px;
   border: 1px solid #2a9d8f;
   background-color: #2a9d8f;
+  padding: 5px;
+  margin: 2px;
+}
+
+.tags-clicked {
+  font-family: "Khula", sans-serif;
+  font-size: 12px;
+  border: 1px solid #dad6ff;
+  background-color: #dad6ff;
   padding: 5px;
   margin: 2px;
 }
