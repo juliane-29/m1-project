@@ -153,7 +153,7 @@ footer {
   font-size: 14px;
   border-bottom: 40px;
   padding-top: 25px;
-  color: 
+  color: ;
 }
 
 footer p {
@@ -229,30 +229,23 @@ footer p {
 }
 
 .plants-list {
-  display: flex; 
-  flex-direction: column;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
-.plants-list img { 
-  height: 200px 
+.plants-list img {
+  height: 200px;
 }
 
-#faq-header{
+#faq-header {
   animation: bounceInRight;
   animation-duration: 2s;
   background-color: #2a9d8f;
-  color: white
-
+  color: white;
 }
 
-
-
-
-
-
-
-
 /* From 768px and up */
 
 /* From 768px and up */
-

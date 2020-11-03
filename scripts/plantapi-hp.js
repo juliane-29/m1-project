@@ -13,6 +13,7 @@ async function getPlantsEdible() {
 
   try {
     // storing the respons fetching the data
+    plantsList.innerHTML="";
     const response = await fetch(
       `${apiUrl}plants/search?token=${key}&q=edible`
     );
@@ -56,6 +57,7 @@ async function getPlantsVegetable() {
   
     try {
       // storing the respons fetching the data
+      plantsList.innerHTML="";
       const response = await fetch(
         `${apiUrl}plants/search?token=${key}&q=vegetable`
       );
@@ -115,6 +117,8 @@ async function getPlantsVegetable() {
   
     try {
       // storing the respons fetching the data
+      plantsList.innerHTML="";
+
       const response = await fetch(
         `${apiUrl}plants/search?token=${key}&q=vegetable`
       );
@@ -174,6 +178,8 @@ async function getPlantsVegetable() {
   
     try {
       // storing the respons fetching the data
+      plantsList.innerHTML="";
+
       const response = await fetch(
         `${apiUrl}plants/search?token=${key}&q=vegetable`
       );
