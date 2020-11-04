@@ -6,7 +6,7 @@
 
 /* Mobile first, we start from the smallest viewport width */
 
-.container-2 {
+.container-slider {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -158,7 +158,6 @@ footer {
   font-size: 14px;
   border-bottom: 40px;
   padding-top: 25px;
-  color: ;
 }
 
 footer p {
@@ -265,11 +264,11 @@ footer p {
 }
 
 #searchBarPlants {
-  text-align: center;
-
+  display: flex;
+  justify-content: center;
 }
 
-#searchBarForPlants {
+.form-control {
   border: 1px outset #2a9d8f;
   color: #2e282a;
   background-color: white;
@@ -284,6 +283,26 @@ footer p {
   justify-content: space-around;
 
 }
-/* From 768px and up */
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+
+}
 
 /* From 768px and up */
+
+h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 42px;
+}
+
+
+/* From 768px and up */
+
+h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 42px;
+}

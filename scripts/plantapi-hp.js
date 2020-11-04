@@ -53,7 +53,7 @@ async function getPlantsVegetable() {
     // storing the respons fetching the data
     plantsList.innerHTML = "";
     const response = await fetch(
-      `${apiUrl}plants/search?token=${key}&q=vegetable`
+      `${apiUrl}plants/search?token=${key}&q=orange`
     );
     console.log("response", response);
     // storing data in form of a json file
@@ -127,7 +127,7 @@ async function getPlantsTerm2() {
     plantsList.innerHTML = "";
 
     const response = await fetch(
-      `${apiUrl}plants/search?token=${key}&filter[common_name]=beach%20strawberry`
+      `${apiUrl}plants/search?token=${key}&q=banana`
     );
     console.log("response", response);
     // storing data in form of a json file
@@ -139,16 +139,14 @@ async function getPlantsTerm2() {
       // create a variable create div and create an element
       const createDiv = document.createElement("div");
       createDiv.className = "plant-container";
-
+      if (plant.image_url === null) {
+        return (createDiv.innerHTML = "");
+      } else {
       createDiv.innerHTML = `<img class="plant-image" src="${plant.image_url}"/><h4>${plant.common_name}<h4/><p>${plant.family_common_name}<p/>`;
       plantsList.appendChild(createDiv);
+      }
     });
 
-    plantsData.forEach((plant) => {
-      const createDiv = document.createElement("div");
-      createDiv.innerHTML = `<img height="200" src="${plant.image_url}"/><h4>${plant.common_name}<h4/><p>${plant.family_common_name}<p/>`;
-      plantsList.appendChild(createDiv);
-    });
 
     /*  dataAPI.forEach(element => {
               const newImg = document.createElement('img')
