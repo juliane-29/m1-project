@@ -5,10 +5,11 @@ const tagThree = document.querySelector("#tag-3");
 const tagFour = document.querySelector("#tag-4"); 
 
 // addEventListener - for the tags
-tagOne.addEventListener("click", getPlantsEdible); 
+tagOne.addEventListener("click", getStrawberriesEdible); 
 tagTwo.addEventListener("click", getPlantsVegetable);
 tagThree.addEventListener("click", getPlantsTerm1);
 tagFour.addEventListener("click", getPlantsTerm2)
+
 
 
 

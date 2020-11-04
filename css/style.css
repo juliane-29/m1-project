@@ -141,6 +141,7 @@ input[type="submit"] {
 
 footer {
   background-color: #dad6ff;
+  padding-top: 20px;
 }
 
 .container-footer-links {
@@ -244,6 +245,12 @@ footer p {
   animation-duration: 2s;
   background-color: #2a9d8f;
   color: white;
+}
+
+.newsletter {
+  background-color: #dad6ff;
+  padding-top: 20px ;
+
 }
 
 /* From 768px and up */
