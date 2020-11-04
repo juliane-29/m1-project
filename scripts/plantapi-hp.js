@@ -81,6 +81,7 @@ async function getPlantsVegetable() {
   }
 }
 getPlantsVegetable();
+
 // TAG 3 //
 async function getPlantsTerm1() {
   tagThree.classList.toggle("tags-clicked");
