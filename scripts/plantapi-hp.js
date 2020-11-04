@@ -1,3 +1,15 @@
+// maybe it's better to initiate a class 
+const tagOne = document.querySelector("#tag-1")
+const tagTwo = document.querySelector("#tag-2");
+const tagThree = document.querySelector("#tag-3");
+const tagFour = document.querySelector("#tag-4"); 
+
+// addEventListener - for the tags
+tagOne.addEventListener("click", getStrawberriesEdible); 
+tagTwo.addEventListener("click", getPlantsVegetable);
+tagThree.addEventListener("click", getPlantsTerm1);
+tagFour.addEventListener("click", getPlantsTerm2)
+
 const key = "e7uunFEDmiERGjDUgJPrn-Dg18cSfwV5Y8YX_h4tiZA";
 //const proxy = "https://cors-anywhere.herokuapp.com/";
 const apiUrl = "https://trefle.io/api/v1/";

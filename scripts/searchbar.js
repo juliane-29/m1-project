@@ -2,12 +2,14 @@ const searchBarPlant = document.querySelector("#searchBarForPlants");
 
 searchBarPlant.addEventListener("keyup", (element) => {
   console.log(element);
+  console.log(element.target.value);
   const query = element.target.value; // for example PALM
   return query; //return PALM as a query to use to fetch data accordingly
+  getDataQuery();
 });
 
 
-async function getFirstData() {
+async function getDataQuery () {
   const plantsList = document.querySelector(".plants-list");
 
   try {
