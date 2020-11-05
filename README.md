@@ -22,29 +22,27 @@
 >
 > - root/
 >
->   - index.html
 >   - faq.html
+>   - index.html
 >   - login.html
->   - signup.html
 >   - selectedplants.html
+>   - signup.html
 >
 > - css/
 >
 >   - style.css
->   - Animations.css
+>   - animations.css
 >
 > - src/
 >
 >   - database.js
 >   - faq.js
->   - index.js
 >   - login.js
->   - main.js
->   - newsletter.js
->   - plantapi.js
 >   - plantapi-hp.js
->   - user.js
+>   - plantapi.js
+>   - searchbar.js
 >   - signup.js
+>   - user.js
 >   - validator.js
 >
 > - img/
@@ -56,7 +54,10 @@
 >   ## Links
 >
 >   GitHub
+>   
+>   https://juliane-29.github.io/m1-project/signup.html
 >
 >   Slides
+>
 >
 >   Trello

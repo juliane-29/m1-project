@@ -34,10 +34,6 @@ p a {
   align-self: left;
 }
 
-body {
-  background-attachment: yellow;
-}
-
 #header-section {
   background: url(./../images/plants_homepage_teaser.jpg);
   background-size: cover;
@@ -45,6 +41,8 @@ body {
   background-position: center center;
   height: 300px;
   overflow: hidden;
+  opacity: 0.9;
+
 }
 
 #header-section p {

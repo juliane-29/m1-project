@@ -1,4 +1,4 @@
-/*class NewsletterSignup {
+class NewsletterSignup {
     constructor(){
         // store input input 
         this.firstNameInput = document.querySelector("#fname");
@@ -41,5 +41,5 @@
 
 const newsletterSignup = new NewsletterSignup(); 
 
-console.log(newsletterSignup);*/
+console.log(newsletterSignup);
 
