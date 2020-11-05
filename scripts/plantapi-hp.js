@@ -1,14 +1,14 @@
-// maybe it's better to initiate a class 
-const tagOne = document.querySelector("#tag-1")
+// maybe it's better to initiate a class
+const tagOne = document.querySelector("#tag-1");
 const tagTwo = document.querySelector("#tag-2");
 const tagThree = document.querySelector("#tag-3");
-const tagFour = document.querySelector("#tag-4"); 
+const tagFour = document.querySelector("#tag-4");
 
 // addEventListener - for the tags
-tagOne.addEventListener("click", getStrawberriesEdible); 
+tagOne.addEventListener("click", getStrawberriesEdible);
 tagTwo.addEventListener("click", getPlantsVegetable);
 tagThree.addEventListener("click", getPlantsTerm1);
-tagFour.addEventListener("click", getPlantsTerm2)
+tagFour.addEventListener("click", getPlantsTerm2);
 
 const key = "e7uunFEDmiERGjDUgJPrn-Dg18cSfwV5Y8YX_h4tiZA";
 //const proxy = "https://cors-anywhere.herokuapp.com/";
@@ -65,7 +65,7 @@ async function getPlantsVegetable() {
       // create a variable create div and create an element
       const createDiv = document.createElement("div");
       createDiv.className = "plant-container";
-      if (plant.common_name === null) {
+      if (plant.image_url === null) {
         createDiv.innerHTML = "";
       } else {
         createDiv.innerHTML = `<img class="plant-image" src="${plant.image_url}"/><h4>${plant.common_name}<h4/><p>${plant.family_common_name}<p/>`;
@@ -127,13 +127,14 @@ async function getPlantsTerm2() {
     plantsList.innerHTML = "";
 
     const response = await fetch(
-      `${apiUrl}plants/search?token=${key}&q=banana`
+      `${apiUrl}plants/search?token=${key}&filter[common_name=beach%20strawberry`
     );
     console.log("response", response);
     // storing data in form of a json file
 
     const dataAPI = await response.json();
     const plantsData = dataAPI.data;
+    console.log("plantsData :>> ", plantsData);
 
     plantsData.forEach((plant) => {
       // create a variable create div and create an element
@@ -142,11 +143,10 @@ async function getPlantsTerm2() {
       if (plant.image_url === null) {
         return (createDiv.innerHTML = "");
       } else {
-      createDiv.innerHTML = `<img class="plant-image" src="${plant.image_url}"/><h4>${plant.common_name}<h4/><p>${plant.family_common_name}<p/>`;
-      plantsList.appendChild(createDiv);
+        createDiv.innerHTML = `<img class="plant-image" src="${plant.image_url}"/><h4>${plant.common_name}<h4/><p>${plant.family_common_name}<p/>`;
+        plantsList.appendChild(createDiv);
       }
     });
-
 
     /*  dataAPI.forEach(element => {
               const newImg = document.createElement('img')

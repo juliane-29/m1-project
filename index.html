@@ -3,12 +3,13 @@
   <head>
     <meta name="Discover the world of the plants" content="Page dedicated to plants" />
     <meta charset="utf-8" />
-    <title>🌿💐🌳World of plants🌿💐🌳 </title>
+    <title>World of plants - Discover the world plants 🌿💐🌳 </title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 <!--viewport is the visible area of the web page, gives browser 
     instructions depending on the user's device-->
     <meta name="author" content="" />
 <!-- linking stylesheet-->
+<link rel="icon" type="image/png" href="/images/plant_logo.svg"/>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -48,17 +49,17 @@
 <main>
   <br>
   <h2> Search for plants</h2>
-  <h3>Search for any plants 🌿💐🌳</h3>
+  <h3>🌿💐🌳🌿💐🌳🌿💐🌳</h3>
   <br>
   <div id="searchBarPlants">
-    <input class="form-control form-control-lg form-control-sm" type="text" name="searchBar" id="searchBarForPlants" placeholder="Search for any plant e.g. strawberries"/>
+    <input class="form-control form-control-lg form-control-sm" type="search" name="searchBar" id="searchBarForPlants" placeholder="Search for any plant e.g. strawberries"/>
   </div>
   <br>
   <div id="searchResults">
   </div>
 <!-- Teaser images-->
 <br>
-<h2>Discover different plants </h2>
+<h2 id="hidden">Discover different plants </h2>
 <div class="slider container-slider">
   <div class = "row">
   <div class="images-slider col-xs-12 col-md-4 col-lg-4"> <img src="/images/plants_example.png" class="image"><button class="btn" onclick="index.html">Disover now</button></div>
@@ -90,10 +91,9 @@
 <div class="footer-part">
   <form class="sign-up-newsletter">
     <h3>Sign up for a plant-friendly newsletter</h3>
-    <input type="text" id="fname" name="fname" placeholder="First Name"><br>
-    <input type="text" id="email" name="email" placeholder="Email"><br>
-    <input type="checkbox" id="gdpr" name="gdpr" value="gdpr">
-    <label for="gdpr"><p>I agree to the Terms & Conditions</p></label><br>
+    <input type="text" id="fname" name="fname" placeholder="First Name">
+    <input type="text" id="email" name="email" placeholder="Email">
+    <label for="gdpr"><p>I agree to the Terms & Conditions</p></label>
     <button type="submit" class="button-signup" id="sign-up-button">Sign up</button>
   </form>
   <div class="error-messages">
@@ -104,10 +104,10 @@
   <p>Made with 💛 in Barcelona</p>
 </div>
 <div class ="row">
-  <div class="col-xs-12 col-sm-12 col-md-3"><p>Home</p></div>
-  <div class="col-xs-12 col-sm-12 col-md-3"><p>Sign up</p></div>
-  <div class="col-xs-12 col-sm-12 col-md-3"><p>Log In</p></div>
-  <div class="col-xs-12 col-sm-12 col-md-3"><p>FAQ</p></div>
+  <div class="col-xs-12 col-sm-12 col-md-3"><p><a href="index.html">Home</p></a></div>
+  <div class="col-xs-12 col-sm-12 col-md-3"><p><a href="login.html">Log In</p></a></div>
+  <div class="col-xs-12 col-sm-12 col-md-3"><p><a href="signup.html">Sign up</p></a></div>
+  <div class="col-xs-12 col-sm-12 col-md-3"><p><a href="faq.html">FAQ</p></a></div>
 </div>
 </div>
 </footer>

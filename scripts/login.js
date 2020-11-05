@@ -32,6 +32,7 @@ class Login {
       }
     });
     const p = document.createElement("p");
+    p.classList.add("error");
     this.errorMessages.innerHTML = "";
 
     if (!user) {

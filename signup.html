@@ -3,12 +3,13 @@
   <head>
     <meta name="Discover the world of the plants" content="Page dedicated to plants" />
     <meta charset="utf-8" />
-    <title>🌿💐🌳World of plants🌿💐🌳 </title>
+    <title>World of plants - Discover the world plants 🌿💐🌳</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <!--viewport is the visible area of the web page, gives browser 
     instructions depending on the user's device-->
     <meta name="author" content="" />
 <!-- linking stylesheet-->
+<link rel="icon" type="image/png" href="/images/plant_logo.svg"/>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -52,14 +53,14 @@
     <div class="form-container container">
       
   <!-- action links to url once sumbitted - send to the url-->
-    <form action = "">
+    <form action = "" class="sign-up">
   <!-- sign up form-->
-    <input type="text" id="fname" name="fname" placeholder="First Name"><br>
-    <input type="text" id="lname" name="lname" placeholder="Last Name"><br>
-    <input type="text" id="email" name="email" placeholder="Email"><br>
+    <input type="text" id="fname" name="fname" placeholder="First Name">
+    <input type="text" id="lname" name="lname" placeholder="Last Name">
+    <input type="text" id="email" name="email" placeholder="Email">
   <!-- type pw - same as text but hides the text that is typed -->
-    <input type="password" id="pword" name="pword" placeholder="Password"><br>
-    <input type="password" id="repeat-pword" name="pword" placeholder="Repeat Password"><br>
+    <input type="password" id="pword" name="pword" placeholder="Password">
+    <input type="password" id="repeat-pword" name="pword" placeholder="Repeat Password">
   <!-- submitting the form navigates to the form's action attribute, using either get or post request-->
     <button type="submit" class="button-signup" id="sign-up-button">Sign up</button>
     </form>
@@ -76,6 +77,20 @@
   <footer>
     <div class="container">
     <div class="footer-part">
+      <div class="container">
+        <div class="footer-part">
+          <form class="sign-up-newsletter">
+            <h3>Sign up for a plant-friendly newsletter</h3>
+            <input type="text" id="fname" name="fname" placeholder="First Name">
+            <input type="text" id="email" name="email" placeholder="Email">
+            <label for="gdpr"><p>I agree to the Terms & Conditions</p></label>
+            <button type="submit" class="button-signup" id="sign-up-button">Sign up</button>
+          </form>
+          <div class="error-messages">
+            <p></p>
+            <p></p>
+            <p></p>
+          </div>
       <p>Made with 💛 in Barcelona</p>
     </div>
     <div class ="row">
@@ -87,9 +102,7 @@
     </div>
     </footer>
 <script src="./scripts/signup.js"></script>
-<script src="./scripts/login.js"></script>
 <script src="./scripts/plantapi.js"></script>
-<script src="./scripts/login.js"></script>
 <script src="./scripts/user.js"></script>
 <script src="./scripts/database.js"></script>
 <script src="./scripts/validator.js"></script>

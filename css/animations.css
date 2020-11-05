@@ -1,67 +1,4 @@
-.animation {
-    text-decoration: none;
-    position:relative;
-     animation:vibrate 1s linear infinite both;
-  }
-  
-  @keyframes vibrate {
-    0% {
-      transform: translate(0,0);
-    }
-    20% {
-      transform: translate(-2px, 2px);
-    }
-    40% {
-      transform: translate(-2px, -2px);
-    }
-    60% {
-      transform: translate(2px, 2px);
-    }
-    80% {
-      transform: translate(2px, -2px);
-    }
-    100% {
-      transform: translate(0);
-    }
-  }
-  
-  .tracking-in-expand {
-      -webkit-animation: tracking-in-expand 0.7s ease-in both;
-              animation: tracking-in-expand 0.7s ease-in both;
-  }
-  
-  @keyframes tracking-in-expand {
-    0% {
-      letter-spacing: -0.5em;
-      opacity: 0;
-    }
-    40% {
-      opacity: 0.6;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
 
-  .tracking-in-expand {
-	-webkit-animation: tracking-in-expand 0.7s cubic-bezier(1.000, 0.000, 0.000, 1.000) both;
-	        animation: tracking-in-expand 0.7s cubic-bezier(1.000, 0.000, 0.000, 1.000) both;
-}
-
-
-@keyframes tracking-in-expand {
-    0% {
-      letter-spacing: -0.5em;
-      opacity: 0;
-    }
-    40% {
-      opacity: 0.6;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  
   .vibrate-1 {
   background-color: #2a9d8f;
   border: 1px solid #2a9d8f;
@@ -82,8 +19,7 @@
   margin: 10px;
 }
 
-
-.questionaire {
+.yes-or-no-block {
     align-content: center;
     display: flex;
     justify-content: center;
@@ -115,34 +51,172 @@
     }
   }
   
-  .question{
-      background-color: green ;
-      padding: 20px;
-      margin: 20px
+  .card {
+    background-color: transparent;
+    width: 200px;
+    height: 200px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px;
+  }
+  
+  .card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
   }
 
-  .container-question{
-      display: flex;
-      justify-content: center;
+  .color-card-roll {
+    background-color: #2a9d8f;
+    animation: roll 10s infinite
   }
 
-
-  .flip-scale-up-hor {
-    -webkit-animation: flip-scale-up-hor 0.5s linear both;
-            animation: flip-scale-up-hor 0.5s linear both;
-  }
-
-  @keyframes flip-scale-up-hor {
+  @keyframes roll {
     0% {
-      -webkit-transform: scale(1) rotateX(0);
-              transform: scale(1) rotateX(0);
-    }
-    50% {
-      -webkit-transform: scale(2.5) rotateX(-90deg);
-              transform: scale(2.5) rotateX(-90deg);
+      transform: rotate(0);
     }
     100% {
-      -webkit-transform: scale(1) rotateX(-180deg);
-              transform: scale(1) rotateX(-180deg);
+      transform: rotate(360deg);
     }
   }
+
+ 
+  .card:hover .card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+   .flip-card-back {
+    background-color: #2a9d8f;
+    color: black;
+    transform: rotateY(180deg);
+  }
+
+  .container-cards{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 30px
+  }
+
+  .card-round{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #dad6ff;
+    animation: shadow-pop-tr 2.3s linear both ;
+
+}
+
+
+@keyframes shadow-pop-tr {
+  0% {
+    -webkit-box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+            box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+    -webkit-transform: translateX(0) translateY(0);
+            transform: translateX(0) translateY(0);
+  }
+  100% {
+    -webkit-box-shadow: 1px -1px #3e3e3e, 2px -2px #3e3e3e, 3px -3px #3e3e3e, 4px -4px #3e3e3e, 5px -5px #3e3e3e, 6px -6px #3e3e3e, 7px -7px #3e3e3e, 8px -8px #3e3e3e;
+            box-shadow: 1px -1px #3e3e3e, 2px -2px #3e3e3e, 3px -3px #3e3e3e, 4px -4px #3e3e3e, 5px -5px #3e3e3e, 6px -6px #3e3e3e, 7px -7px #3e3e3e, 8px -8px #3e3e3e;
+    -webkit-transform: translateX(-8px) translateY(8px);
+            transform: translateX(-8px) translateY(8px);
+  }
+}
+
+.card-image {
+  animation: flicker-1 2s linear infinite both;
+}
+
+@keyframes flicker-1 {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  41.99% {
+    opacity: 1;
+  }
+  42% {
+    opacity: 0;
+  }
+  43% {
+    opacity: 0;
+  }
+  43.01% {
+    opacity: 1;
+  }
+  47.99% {
+    opacity: 1;
+  }
+  48% {
+    opacity: 0;
+  }
+  49% {
+    opacity: 0;
+  }
+  49.01% {
+    opacity: 1;
+  }
+}
+
+
+.card-gone {
+  animation: rotate-out-center 10.0s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+@keyframes rotate-out-center {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+    opacity: 0;
+  }
+}
+
+.card-wobble{
+  animation: wobble-ver-right 0.8s both;
+}
+
+@keyframes wobble-ver-right {
+  0%,
+  100% {
+    -webkit-transform: translateY(0) rotate(0);
+            transform: translateY(0) rotate(0);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+  }
+  15% {
+    -webkit-transform: translateY(-30px) rotate(6deg);
+            transform: translateY(-30px) rotate(6deg);
+  }
+  30% {
+    -webkit-transform: translateY(15px) rotate(-6deg);
+            transform: translateY(15px) rotate(-6deg);
+  }
+  45% {
+    -webkit-transform: translateY(-15px) rotate(3.6deg);
+            transform: translateY(-15px) rotate(3.6deg);
+  }
+  60% {
+    -webkit-transform: translateY(9px) rotate(-2.4deg);
+            transform: translateY(9px) rotate(-2.4deg);
+  }
+  75% {
+    -webkit-transform: translateY(-6px) rotate(1.2deg);
+            transform: translateY(-6px) rotate(1.2deg);
+  }
+}

@@ -64,6 +64,7 @@ class Signup {
     const errorStringsArr = Object.values(errorsObj);
     errorStringsArr.forEach((str) => {
       const p = document.createElement("p");
+      p.classList.add("error");
       p.textContent = str;
       this.errorMessages.appendChild(p);
     });

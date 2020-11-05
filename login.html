@@ -3,12 +3,14 @@
   <head>
     <meta name="Discover the world of the plants" content="Page dedicated to plants" />
     <meta charset="utf-8" />
-    <title>🌿💐🌳World of plants🌿💐🌳 </title>
+    <title>World of plants - Discover the world plants 🌿💐🌳</title>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <!--viewport is the visible area of the web page, gives browser 
     instructions depending on the user's device-->
     <meta name="author" content="" />
 <!-- linking stylesheet-->
+<link rel="icon" type="image/png" href="/images/plant_logo.svg"/>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -48,13 +50,14 @@
 <main>
 <h2> Log in</h2>
 <h3>🌿Enter the world of plants🌿</h3>
-<div class="form-container">
+<div class="messages"></div>
+
+<div class="form-container container">
 <form class="login-form" action="">
-<input type="text" id="email" name="email" placeholder="Email"><br>
-<input type="password" id="password" name="password" placeholder="Password"><br>
+<input type="text" id="email" name="email" placeholder="Email">
+<input type="password" id="password" name="password" placeholder="Password">
 <button type="submit" id="log-in-button" value="Log In">Log In</button>
 </form>
-<div class="messages"></div>
 </div>
 </main>
 </body>
@@ -63,6 +66,20 @@
 <footer>
   <div class="container">
   <div class="footer-part">
+    <div class="container">
+      <div class="footer-part">
+        <form class="sign-up-newsletter">
+          <h3>Sign up for a plant-friendly newsletter</h3>
+          <input type="text" id="fname" name="fname" placeholder="First Name">
+          <input type="text" id="email" name="email" placeholder="Email">
+          <label for="gdpr"><p>I agree to the Terms & Conditions</p></label>
+          <button type="submit" class="button-signup" id="sign-up-button">Sign up</button>
+        </form>
+        <div class="error-messages">
+          <p></p>
+          <p></p>
+          <p></p>
+        </div>
     <p>Made with 💛 in Barcelona</p>
   </div>
   <div class ="row">
