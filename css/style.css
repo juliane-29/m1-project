@@ -28,6 +28,11 @@ p a {
   margin: 5px;
 }
 
+p a:hover{
+  color: #2e282a;
+  text-decoration: none;
+}
+
 #logo {
   max-width: 70%;
   height: auto;
