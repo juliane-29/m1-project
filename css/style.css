@@ -225,31 +225,47 @@ input[type="search"] {
 
 
 .btn {
-  background-color: #dad6ff;
+  background-color: #EAE8FF;
   color: #2e282a;
-  border: 1px solid #dad6ff;
+  border: 1px solid #EAE8FF;
   font-family: "Cormorant", serif;
   font-size: 18px;
   padding: 8px 40px 8px 40px;
   align-content: center;
 }
 
+.btn:hover{
+  background-color: #dad6ff;
+  border: 1px solid #dad6ff;
+}
+
 #log-in-button {
-  background-color: #2a9d8f;
-  border: 1px solid #2a9d8f;
+  background-color: #6ED8CC;
+  border: 1px solid #6ED8CC;
   font-family: "Cormorant", serif;
   font-size: 16px;
   padding: 4px 20px 4px 20px;
   margin: 8px
 }
 
+#log-in-button:hover {
+  background-color: #2A9D8F;
+  border: 1px solid #2A9D8F;
+}
+
 .button-signup {
-  background-color: #2a9d8f;
-  border: 1px solid #2a9d8f;
+  background-color: #6ED8CC;
+  border: 1px solid #6ED8CC;
   font-family: "Cormorant", serif;
   font-size: 16px;
   padding: 4px 20px 4px 20px;
   margin: 20px;
+}
+
+.button-signup:hover{
+  background-color: #2A9D8F;
+  border: 1px solid #2A9D8F;
+
 }
 
 .image {

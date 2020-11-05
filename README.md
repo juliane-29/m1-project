@@ -13,6 +13,12 @@
 > - Log In: Log in to see plants of the month
 > - Plants of the month: not accessible for everyone, exclusive selection of plants of the month for registered user
 > - FAQ: You'd like to find out more about plants? That's what our FAQ page is for
+> - Search bar: You can type in a plant and see plants matching you query
+>
+> ## Wireframes
+> - Optimisation of search functionality 
+> - Implementation of a wishlist
+> - Image Recognition API
 >
 > ## Wireframes
 >
