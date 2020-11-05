@@ -181,11 +181,17 @@ footer p {
 .tags-clicked {
   font-family: "Khula", sans-serif;
   font-size: 12px;
-  border: 1px solid #dad6ff;
-  background-color: #dad6ff;
+  border: 1px solid #EAE8FF;
+  background-color: #EAE8FF;
   padding: 5px;
   margin: 2px;
 }
+
+.tags-clicked:hover{
+  border: 1px solid #dad6ff;
+  background-color: #dad6ff;
+}
+
 
 #planttags {
   padding-bottom: 20px;
@@ -221,8 +227,6 @@ input[type="search"] {
   font-size: 14px;
   text-align: center;
 }
-
-
 
 .btn {
   background-color: #EAE8FF;
