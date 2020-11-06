@@ -28,14 +28,15 @@ p a {
   margin: 5px;
 }
 
+p a:hover{
+  color: #2e282a;
+  text-decoration: none;
+}
+
 #logo {
   max-width: 70%;
   height: auto;
   align-self: left;
-}
-
-body {
-  background-attachment: yellow;
 }
 
 #header-section {
@@ -45,6 +46,8 @@ body {
   background-position: center center;
   height: 300px;
   overflow: hidden;
+  opacity: 0.9;
+
 }
 
 #header-section p {
@@ -57,10 +60,6 @@ body {
   margin-top: 60px;
   color: white;
   text-align: center;
-}
-
-#bg {
-  background: url(images/plant_banner.jpg);
 }
 
 h1 {
@@ -187,11 +186,17 @@ footer p {
 .tags-clicked {
   font-family: "Khula", sans-serif;
   font-size: 12px;
-  border: 1px solid #dad6ff;
-  background-color: #dad6ff;
+  border: 1px solid #EAE8FF;
+  background-color: #EAE8FF;
   padding: 5px;
   margin: 2px;
 }
+
+.tags-clicked:hover{
+  border: 1px solid #dad6ff;
+  background-color: #dad6ff;
+}
+
 
 #planttags {
   padding-bottom: 20px;
@@ -228,34 +233,48 @@ input[type="search"] {
   text-align: center;
 }
 
-
-
 .btn {
-  background-color: #dad6ff;
+  background-color: #EAE8FF;
   color: #2e282a;
-  border: 1px solid #dad6ff;
+  border: 1px solid #EAE8FF;
   font-family: "Cormorant", serif;
   font-size: 18px;
   padding: 8px 40px 8px 40px;
   align-content: center;
 }
 
+.btn:hover{
+  background-color: #dad6ff;
+  border: 1px solid #dad6ff;
+}
+
 #log-in-button {
-  background-color: #2a9d8f;
-  border: 1px solid #2a9d8f;
+  background-color: #6ED8CC;
+  border: 1px solid #6ED8CC;
   font-family: "Cormorant", serif;
   font-size: 16px;
   padding: 4px 20px 4px 20px;
   margin: 8px
 }
 
+#log-in-button:hover {
+  background-color: #2A9D8F;
+  border: 1px solid #2A9D8F;
+}
+
 .button-signup {
-  background-color: #2a9d8f;
-  border: 1px solid #2a9d8f;
+  background-color: #6ED8CC;
+  border: 1px solid #6ED8CC;
   font-family: "Cormorant", serif;
   font-size: 16px;
   padding: 4px 20px 4px 20px;
   margin: 20px;
+}
+
+.button-signup:hover{
+  background-color: #2A9D8F;
+  border: 1px solid #2A9D8F;
+
 }
 
 .image {

@@ -127,14 +127,14 @@ async function getPlantsTerm2() {
     plantsList.innerHTML = "";
 
     const response = await fetch(
-      `${apiUrl}plants/search?token=${key}&filter[common_name=beach%20strawberry`
+      `${apiUrl}plants/search?token=${key}&q=banana`
     );
     console.log("response", response);
     // storing data in form of a json file
 
     const dataAPI = await response.json();
     const plantsData = dataAPI.data;
-    console.log("plantsData :>> ", plantsData);
+    //console.log("plantsData :>> ", plantsData);
 
     plantsData.forEach((plant) => {
       // create a variable create div and create an element
