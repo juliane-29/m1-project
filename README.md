@@ -15,6 +15,12 @@
 > - FAQ: You'd like to find out more about plants? That's what our FAQ page is for
 > - Search bar: You can type in a plant and see plants matching you query
 >
+> ## Backlog
+> - Optimisation of the search functionality 
+> - Implementation of a wish list
+> - Forum to chat about plants
+> - Image Recognition API
+>
 > ## Wireframes
 > - Optimisation of search functionality 
 > - Implementation of a wishlist
