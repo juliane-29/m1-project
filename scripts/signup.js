@@ -89,7 +89,7 @@ class Signup {
         }
     */
     const newUser = new User(fName, lName, email, password);
-    console.log(newUser);
+    //console.log(newUser);
     // save the user in the database
     db.saveNewUser(newUser);
     // empty the form
@@ -119,8 +119,8 @@ class Signup {
 // object is created
 // have the properties defined in the class plus methods
 const signup = new Signup();
-console.log(Signup); // class
-console.log(signup); // output the object with properties and methods, e.g. email Input: input#email
+//console.log(Signup); // class
+//console.log(signup); // output the object with properties and methods, e.g. email Input: input#email
 
 // add eventlisteners when everything (files, resources) are loaded
 // important as we need other files to be loaded, e.g. validator.js, meaning the

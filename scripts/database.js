@@ -33,6 +33,6 @@ class Database {
 // create an instance for the db
 const db = new Database(); 
 
-console.log("db", db);
+//console.log("db", db);
 
 //QUESION - why arrow functions 

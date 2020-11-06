@@ -2,8 +2,8 @@
 const searchBarPlant = document.querySelector("#searchBarForPlants");
 // add Event to Search Bar 
 searchBarPlant.addEventListener("keyup", (element) => {
-  console.log(element);
-  console.log(element.target.value);
+  //console.log(element);
+  //console.log(element.target.value);
   const query = element.target.value; // for example PALM --> user's query
   ; //return PALM as a query to use to fetch data accordingly
   getDataQuery(query);

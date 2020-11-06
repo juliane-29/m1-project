@@ -83,4 +83,4 @@ class Validator {
 // going to use the instance for the sign up page to check the inputs and show error
 // messages if necessary
 const validator = new Validator();
-console.log("validator",validator);
+//console.log("validator",validator);
